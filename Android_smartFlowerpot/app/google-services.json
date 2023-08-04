@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "401844516384",
+    "project_id": "fir-test-5e529",
+    "storage_bucket": "fir-test-5e529.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401844516384:android:5e9af4d8ea63cbb7096e45",
+        "android_client_info": {
+          "package_name": "com.example.smartflowerpot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401844516384-j57sovismkphha1e231slauafjk20mll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartflowerpot",
+            "certificate_hash": "07d8af904c3a72f1d544a55e903c70be39740fcc"
+          }
+        },
+        {
+          "client_id": "401844516384-j5ot4ct5tv4jcsii6v4rvp6opb0l3atg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDq8jg8V068cVuVB5p4eZCG49f2H6EkVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401844516384-j5ot4ct5tv4jcsii6v4rvp6opb0l3atg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

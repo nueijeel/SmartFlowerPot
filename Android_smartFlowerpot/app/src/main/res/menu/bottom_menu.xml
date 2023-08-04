@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/FirstTab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/water"
+        android:title="Water"
+        android:fontFamily="@font/nanum"/>
+    <item
+        android:id="@+id/SecondTab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/community"
+        android:title="Community"
+        android:fontFamily="@font/nanum"/>
+    <item
+        android:id="@+id/ThirdTab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/image"
+        android:title="Image"
+        android:fontFamily="@font/nanum"/>
+    <item
+        android:id="@+id/FourthTab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/account"
+        android:title="Account"
+        android:fontFamily="@font/nanum"/>
+
+</menu>

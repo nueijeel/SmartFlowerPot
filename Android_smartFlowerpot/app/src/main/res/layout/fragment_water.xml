@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".water">
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/BtnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃"
+                    android:background="@drawable/buttonshape"
+                    android:layout_margin="5dp"
+                    android:visibility="visible"
+                    android:fontFamily="@font/nanum"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나의 화분 상태"
+                    android:layout_margin="10dp"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/nanum"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/BtnConnect"
+                        android:text="장치 연결"
+                        android:padding="10sp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/nanum"
+                        android:background="@drawable/buttonshape"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/ImgPlant"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:maxWidth="250dp"
+                    android:maxHeight="250dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/plant1"
+                    tools:srcCompat="@tools:sample/avatars"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현재 수분량 : "
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/nanum"/>
+                    <TextView
+                        android:id="@+id/TextMoisture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수분량 % 표시"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nanum"/>
+                </LinearLayout>
+
+                <!--수분량에 따라서 토양상태 dry soil, humid soil, in water로 구분-->
+                <TextView
+                    android:id="@+id/TextBucketWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="물통 상태 : 물의 양 충분"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/nanum"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현재 온도 : "
+                        android:layout_margin="10dp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/nanum"/>
+                    <TextView
+                        android:id="@+id/TextTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="온도 °C"
+                        android:layout_margin="10dp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/nanum"/>
+                </LinearLayout>
+
+                <!--버튼 토양 상태,수분량 따라서 활성화-->
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BtnWatering"
+                    android:text="화분에 물주기"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="70dp"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/nanum"
+                    android:background="@drawable/buttonshape"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

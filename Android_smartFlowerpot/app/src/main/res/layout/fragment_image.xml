@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/BtnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:background="@drawable/buttonshape"
+            android:layout_margin="5dp"
+            android:visibility="visible"
+            android:fontFamily="@font/nanum"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 식물 등록하기"
+            android:layout_margin="10dp"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/nanum"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/ImgPlant"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/plant1"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/BtnUploadPic"
+            android:layout_gravity="center"
+            android:text="사진 선택"
+            android:textSize="15sp"
+            android:fontFamily="@font/nanum"
+            android:background="@color/honeydew"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/BtnDeletePic"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="사진 삭제"
+            android:textSize="15sp"
+            android:fontFamily="@font/nanum"
+            android:background="@color/honeydew"/>
+
+        <ProgressBar
+            android:id="@+id/ProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/BtnRegister"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="등록하기"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanum"
+            android:background="@drawable/buttonshape"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
